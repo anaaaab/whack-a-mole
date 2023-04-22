@@ -1,0 +1,91 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  --deault-delay: 1;
+  font-size: 62.5%;
+  --fs-body: 1.6rem;
+}
+
+body {
+  margin: 0 auto;
+  display: grid;
+  place-items: center;
+}
+
+main {
+  width: 100vw;
+  max-width: 144rem; /* Para limitar a largura em telas maiores */
+  min-height: 102rem;
+  background-image: url(./assets/fundo.svg);
+}
+
+.box-mole {
+  margin: 30rem auto 0;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  place-items: center;
+  width: 105rem;
+}
+
+.mole {
+  width: 22.1rem;
+  height: 16.8rem;
+  background-image: url(./assets/toupeira6.svg);
+}
+
+.animated {
+  animation: RestlessMole .7s;
+  animation-delay: 3s;
+  animation-iteration-count: 1;
+}
+
+.animated2 {
+  animation: RestlessMole .7s;
+  animation-delay: 7s;
+  animation-iteration-count: 1;
+
+}
+
+.animated3 {
+  animation: RestlessMole .7s;
+  animation-delay: 10s;
+  animation-iteration-count: 1;
+}
+
+.animated4 {
+  animation: RestlessMole .7s;
+  animation-delay: 12.5s;
+  animation-iteration-count: 1;
+}
+
+.animated5 {
+  animation: RestlessMole .7s;
+  animation-delay: 15s;
+  animation-iteration-count: 1;
+}
+
+@keyframes RestlessMole {
+  0% {
+      background-image: url(./assets/toupeira1.svg);
+  }
+  20% {
+      background-image: url(./assets/toupeira2.svg);
+  }
+  40% {
+      background-image: url(./assets/toupeira3.svg);
+  }
+  60% {
+      background-image: url(./assets/toupeira4.svg);
+  }
+  80% {
+      background-image: url(./assets/toupeira5.svg);
+  }
+  100% {
+      background-image: url(./assets/toupeira6.svg);
+  }
+
+}
